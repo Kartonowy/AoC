@@ -29,3 +29,5 @@ for (let i = 0; i < data.length; i+=3) {
 }
 
 console.log("Answer to part two is " + sum)
+
+export {}
