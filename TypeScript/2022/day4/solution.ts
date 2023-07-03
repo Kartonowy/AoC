@@ -8,11 +8,11 @@ for (let pair of data) {
     pair = pair.split(",")
     pair[0] = pair[0].split("-")
     pair[1] = pair[1].split("-")
-    if ((parseInt(pair[0][0]) >= parseInt(pair[1][0]) && parseInt(pair[0][1]) <= parseInt(pair[1][1])) 
+    if ((Number(pair[0][0]) >= Number(pair[1][0]) && Number(pair[0][1]) <= Number(pair[1][1])) 
         || 
-        (parseInt(pair[1][0]) >= parseInt(pair[0][0]) && parseInt(pair[1][1]) <= parseInt(pair[0][1]))
+        (Number(pair[1][0]) >= Number(pair[0][0]) && Number(pair[1][1]) <= Number(pair[0][1]))
         ) {
-        sum += 1;
+        sum++;
     }
 }
 
@@ -25,8 +25,11 @@ for (let pair of data) {
     pair = pair.split(",")
     pair[0] = pair[0].split("-")
     pair[1] = pair[1].split("-")
-    if (parseInt(pair[0][1]) >= parseInt(pair[1][0]) || parseInt(pair[1][1]) <= parseInt(pair[0][0])) {
-        sum += 1;
+    if ((Number(pair[0][0]) <= Number(pair[1][0]) && Number(pair[0][1]) >= Number(pair[1][1]))
+    || (Number(pair[0][0]) >= Number(pair[1][0]) && Number(pair[0][1]) <= Number(pair[1][1]))
+    || (Number(pair[0][0]) <= Number(pair[1][1]) && Number(pair[1][0]) <= Number(pair[0][1]))
+    ) {
+        sum++;
     }
 }
 
