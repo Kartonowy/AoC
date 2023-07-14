@@ -33,3 +33,5 @@ function partTwo(data: string) {
 
 console.log("Answer to part one is " + partOne(data));
 console.log("Answer to part two is " + partTwo(data));
+
+export {};
