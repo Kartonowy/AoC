@@ -34,3 +34,5 @@ for (let pair of data) {
 }
 
 console.log("Answer to part two is " + sum)
+
+export {}
