@@ -1,3 +1,2 @@
-# Kartonowy's Advent Of Code
-
-My attempt at doing Advent of Code, will try to do those from time to time in language which I find fitting / I want to improve in.
+# aoc
+its time for adventure
